@@ -344,8 +344,8 @@ export function createOidcAuth(
       stopSilentRenew() {
         mgr.stopSilentRenew()
       },
-      manualSilentRenew() {
-        mgr.signinSilent()
+      async manualSilentRenew() {
+        return await mgr.signinSilent()
       }
     }
   })
