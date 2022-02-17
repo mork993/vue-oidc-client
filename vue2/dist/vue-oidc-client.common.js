@@ -4300,6 +4300,9 @@ function createOidcAuth(_authName, defaultSignInType, _appUrl, oidcConfig, logge
       },
       stopSilentRenew: function stopSilentRenew() {
         mgr.stopSilentRenew();
+      },
+      manualSilentRenew: function manualSilentRenew() {
+        mgr.signinSilent();
       }
     }
   });
